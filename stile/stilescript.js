@@ -51,8 +51,12 @@ const app = new Vue({
             this.todoList.splice(index,1)
         },
         pus(){
-            this.todoList.push({text:this.newText,done:false},)
-            console.log(this.todoList)
+            if (this.newText.trim() != '') {
+                this.todoList.push({text:this.newText,done:false},);
+
+                this.newText=''; 
+            }
+            
         }
 
 
