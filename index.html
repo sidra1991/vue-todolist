@@ -11,9 +11,8 @@
 
     <div id="container" >
         <div class="input"> 
-           <input type="text" > 
-           <button type="button" > inserisci </button>
-        
+            <input v-model="newText" type="text" id="inp1" name="text"> 
+           <button type="button" @click="pus()"  > inserisci </button>
         </div>
         <div class="list">
             <ul>

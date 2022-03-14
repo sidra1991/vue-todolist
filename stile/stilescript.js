@@ -8,6 +8,7 @@
 const app = new Vue({
     el: '#container',
     data: {
+        newText : '',
         todoList: [
             {
                 text: "ciao",
@@ -47,6 +48,10 @@ const app = new Vue({
         },
         del(index){ 
             this.todoList.splice(index,1)
+        },
+        pus(){
+            this.todoList.push({text:this.newText,done:false},)
+            console.log(this.todoList)
         }
 
 
