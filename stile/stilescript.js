@@ -44,6 +44,7 @@ const app = new Vue({
                 this.todoList[index].done = true
             }
             console.log(this)
+            // this.todoList[index].done = !this.todoList[index].done
 
         },
         del(index){ 
