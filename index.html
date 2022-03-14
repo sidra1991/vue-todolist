@@ -18,7 +18,8 @@
         <div class="list">
             <ul>
                 <li v-for="(element, index) in todoList" class="todo"  >
-                    <span @click="toggle(index)" :class="element.done ? 'ceck' : ''"> {{element.text}} </span> <button type="button" > X </button>
+                    <span @click="toggle(index)" :class="element.done ? 'ceck' : ''"> {{element.text}} </span> 
+                    <button type="button" @click="del(index)"> X </button>
                 </li>
             </ul>
         </div>
